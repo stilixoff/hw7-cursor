@@ -127,7 +127,32 @@ header {
 
 .carousel-control-next,
 .carousel-control-prev {
-    width: auto;
+    width: 4rem;
     opacity: 1;
     transition: none;
+}
+
+.carousel-control-next-icon {
+    width: 4rem;
+    height: 5rem;
+    background: url('img/s-r.png') center no-repeat;
+    background-color: #e8645a;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 5rem;
+    background: url('img/s-l.png') center no-repeat;
+    background-color: #e8645a;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.carousel-control-next:hover
+.carousel-control-next-icon,
+.carousel-control-prev:hover
+.carousel-control-prev-icon {
+    background-color: #e2534b;
 }
