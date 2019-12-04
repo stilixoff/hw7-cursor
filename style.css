@@ -2,6 +2,11 @@ html {
     font-family: "Open Sans";
     font-size: 14px;
 }
+
+body {
+    background-color: #f3f3f3;
+}
+
 a, a:hover {
     text-decoration: none;
 }
@@ -118,6 +123,11 @@ header {
     line-height: 2rem;
 }
 
+.carousel {
+    position: relative;
+    max-height: 539px;
+}
+
 .carousel-control-next:focus,
 .carousel-control-next:hover,
 .carousel-control-prev:focus,
@@ -156,8 +166,65 @@ header {
 .carousel-control-prev-icon {
     background-color: #e2534b;
 }
-.indicator {
-    width: 100%;
-    height: 55px;
-    background-color: lawngreen;
+
+.advantages-container {
+    min-height: 41rem;
 }
+
+.some-services .row  {
+    margin: auto;
+    min-height: 100px;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+}
+
+.some-services h3 {
+    font-weight: 600;
+    color: #7f8c8c;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.some-services  {
+    color: #7f8c8c;
+    font-size: .8rem;
+    margin-top: 4rem;
+}
+
+.some-services button {
+    width: 14.3rem;
+    height: 4rem;
+    background-color: #e8645a;
+    border-color: #e8645a;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.some-services button:hover {
+    background-color: #e2534b;
+    border-color: #e2534b;
+}
+
+.some-services .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #e2534b;
+    border-color: #e2534b;
+}
+
+.box-advantages {
+    height: 22.1rem;
+    background-color: #f8f8f8;
+}
+
+.box-advantages:hover {
+    background-color: white;
+}
+
+.advantages {
+    margin-top: 4rem;
+}
+
+.box-advantages .card {
+    height: 100%;
+}
+
