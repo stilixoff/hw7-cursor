@@ -216,15 +216,89 @@ header {
     background-color: #f8f8f8;
 }
 
-.box-advantages:hover {
-    background-color: white;
-}
-
 .advantages {
     margin-top: 4rem;
 }
 
 .box-advantages .card {
     height: 100%;
+    background-color: #f8f8f8;
+    border: none;
+    box-shadow: 0px .5rem 0px 0px rgba(229,230,230,1);
 }
 
+.box-advantages .card:hover {
+    background-color: white;
+}
+
+.box-advantages .img-like {
+    width: 4.1rem;
+    height: 4rem;
+    background: url('img/like.png') center no-repeat;
+}
+.box-advantages .img-key {
+    width: 4.1rem;
+    height: 4rem;
+    background: url('img/key.png') center no-repeat;
+}
+.box-advantages .img-flag {
+    width: 4.1rem;
+    height: 4rem;
+    background: url('img/flag.png') center no-repeat;
+}
+.box-advantages .img-botel {
+    width: 4.1rem;
+    height: 4.1rem;
+    background: url('img/botl.png') center no-repeat;
+}
+
+.box-advantages .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-advantages .card-title {
+    color: #7f8c8c;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.box-advantages .card-text {
+    color: 777777;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.box-advantages .btn {
+    position: absolute;
+    bottom: -1.8rem;
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.box-advantages .card:hover .btn {
+    background-color: #e2534b;
+    border: #e2534b;
+}
+
+.box-advantages .card:hover .img-like {
+    background: url('img/like-hover.png') center no-repeat;
+}
+
+.box-advantages .card:hover .img-key {
+    background: url('img/key-hover.png') center no-repeat;
+}
+
+.box-advantages .card:hover .img-flag {
+    background: url('img/flag-hover.png') center no-repeat;
+}
+
+.box-advantages .card:hover .img-botel {
+    background: url('img/botl-hover.png') center no-repeat;
+}
