@@ -93,8 +93,6 @@ header {
     background-color: #7f8c8c;
 }
 
-
-
 .first-slider-text {
     text-align: center;
 }
@@ -301,4 +299,147 @@ header {
 
 .box-advantages .card:hover .img-botel {
     background: url('img/botl-hover.png') center no-repeat;
+}
+
+.second-box-slider {
+    height: 400px;
+    background-color: #ececec;
+
+}
+
+.second-box-slider h2 {
+    font-size: 3rem;
+    color: #e2534b;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.second-box-slider p {
+    font-size: .9rem;
+    color: #777777;
+    text-align: center;
+}
+
+.second-slider-windows {
+    position: relative;
+    bottom: -27%;
+}
+
+/* .second-slider-windows .row {
+    display: flex;
+    align-items: center;
+    justify-content: centre;
+} */
+
+.second-box-window {
+    height: 18.6rem;
+    background-color: #b0b8b9;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: .3rem;
+}
+
+.second-box-window-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 15%;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.group-dots {
+    display: flex;
+}
+
+.group-dots div {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: #ececec;
+    margin: 0px .3rem 0 .3rem;
+}
+
+.slash-dot {
+    width: .8rem;
+    height: .4rem;
+    background-color: #ececec;
+    border-radius: 25%;
+    margin-right: 1rem;
+}
+
+.second-box-window-img {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 85%;
+    background-color: #62b9b0;
+    border-radius: .5rem;
+}
+
+.second-box-window-img p{
+    color: white;
+    font-size: 2rem;
+}
+
+.active-hover {
+    position: absolute;
+    width: 500px;
+    height: 380px;
+    right: -4.5rem;
+    top: -4rem;
+    z-index: 10;
+}
+
+.active-hover .second-box-window-img  {
+    background-color: #7f8c8c;
+}
+
+.description {
+    margin-top: 15.4em;
+    background-color: #f3f3f3;
+    height: 50rem;
+}
+
+.description-text-left h4 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #7f8c8c;
+    margin-bottom: 1rem;
+}
+
+.description-text-left p {
+    color: 777777;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.description-text {
+    display: flex;
+}
+
+.description-text div {
+    margin-right: 1rem;
+    width: .9rem;
+    height: .9rem;
+    background: url('img/arrow.png') center no-repeat;
+}
+
+.diagrams p {
+    color: 777777;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.diagrams p a {
+    color: #e2534b;
+    text-decoration: underline;
 }
