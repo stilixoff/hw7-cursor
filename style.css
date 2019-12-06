@@ -84,7 +84,6 @@ header {
 .first-slider{
     width: 100%;
     max-height: 555px;
-    /* overflow: hidden; */
     box-sizing: border-box;
     position: relative;
 }
@@ -345,13 +344,6 @@ header {
     position: relative;
     bottom: -27%;
 }
-
-/* .second-slider-windows .row {
-    display: flex;
-    align-items: center;
-    justify-content: centre;
-} */
-
 .second-box-window {
     height: 18.6rem;
     background-color: #b0b8b9;
