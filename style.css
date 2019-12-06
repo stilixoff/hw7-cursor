@@ -84,7 +84,7 @@ header {
 .first-slider{
     width: 100%;
     max-height: 555px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
     position: relative;
 }
@@ -123,7 +123,27 @@ header {
 
 .carousel {
     position: relative;
-    max-height: 539px;
+    max-height: 555px;
+}
+
+.carousel-inner {
+    max-height: 555px;
+    overflow: hidden;
+}
+
+.carousel-indicators {
+    bottom: -7%;
+}
+
+.carousel-indicators li {
+    background-color: #b0b8b9;
+    opacity: 1;
+    width: 5rem;
+    height: 0.3rem;
+}
+
+.carousel-indicators .active {
+    background-color: red;
 }
 
 .carousel-control-next:focus,
