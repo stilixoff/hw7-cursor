@@ -457,9 +457,51 @@ header {
     font-size: .9rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    line-height: 2rem;
 }
 
 .diagrams p a {
     color: #e2534b;
     text-decoration: underline;
 }
+
+.progress-bar__custom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.progress-bar__custom p {
+    color: #7f8c8c;
+    font-weight: 900;
+}
+
+.progress-bar-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar-img {
+    margin-bottom: 1rem;
+}
+
+.progress-bar-number {
+    position: absolute;
+    font-size: 2.2rem;
+    left: 36%;
+    top: 35%;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.progress-bar-number__custom{
+    left: 27%;
+}
+
+.progress-bar-title {
+    font-size: 1.2rem
+}
+
