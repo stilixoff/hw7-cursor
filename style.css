@@ -416,10 +416,10 @@ header {
 .description {
     margin-top: 15.4em;
     background-color: #f3f3f3;
-    height: 50rem;
 }
 
-.description-text-left h4 {
+.description-text-left h4,
+.description-text-right h4 {
     font-size: 1.1rem;
     font-weight: 900;
     color: #7f8c8c;
@@ -496,4 +496,77 @@ header {
 .progress-bar-title {
     font-size: 1.2rem
 }
+
+.description-text-quote p {
+
+}
+
+.description-text-quote__inner p {
+    background-color: white;
+    border-radius: .2rem;
+    padding: 0px .5rem 0 .5rem;
+    font-style: italic;
+    font-size: .9rem;
+    color: 777777;
+    font-size: .9rem;
+    line-height: 2rem;
+}
+
+.description-text-quote__inner {
+    position: relative;
+}
+
+.description-text-quote__inner::before {
+    content: '';
+    position: absolute;
+    background: url('img/triangle.svg');
+    width: 2rem;
+    height: 2rem;
+    left: 17%;
+    bottom: -25%;
+}
+
+.description-text-quote__name {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #7f8c8c;
+    margin-top: .5rem;
+}
+
+.our-clients-wrapper {
+    margin-top: 3rem;
+}
+
+.our-client-slider__title p {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #7f8c8c;
+}
+
+.our-client-slider__value-line,
+.our-client-slider__title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.our-client-line {
+    width: 100%;
+    height: .2rem;
+    background-color: #e1e2e2;
+}
+
+.our-client-slider__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__button-left,
+.slider__button-right {
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: #98a3a3;
+}
+
 
