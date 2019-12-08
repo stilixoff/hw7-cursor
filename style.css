@@ -12,6 +12,7 @@ a, a:hover {
 }
 
 header {
+    position: relative;
     width: 100vw;
     min-height: 80px;
     background-color: #76c7c0;
@@ -19,29 +20,38 @@ header {
     align-items: center;
 }
 
-.logo p {
-    font-size: 1.4em;
-    color: white;
+header::after {
+    content: '';
+    width: 100%;
+    height: 9px;
+    background: url('img/gant-up.png') center repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    filter: invert(60%);
+    opacity: .3;
 }
 
-.logo span {
-    font-family: "Open Sans";
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 2.2rem;
+.bd-example {
+    overflow: hidden;
 }
 
 .nav {
     justify-content: space-between;
 }
 
-.nav-link {
+.navbar-light .navbar-brand {
     color: white;
+    font-size: 1rem;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
-.nav a {
+.navbar-light .navbar-brand span {
     color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 .nav-pills .nav-link.active {
@@ -81,6 +91,10 @@ header {
     background-color: #76c7c0;
 }
 
+.navbar {
+    background-color: #76c7c0;
+}
+
 .first-slider{
     width: 100%;
     max-height: 555px;
@@ -92,47 +106,81 @@ header {
     background-color: #7f8c8c;
 }
 
-.first-slider-text {
-    text-align: center;
+.nav-item .nav-link {
+    font-weight: 600;
+    color: #fff;
+    margin: 0 15px;
+    padding: 9px 10px;
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
 }
 
-.first-slider-text>h3 {
-    display: inline;
-    font-size: 4rem;
+.nav-item.active, .nav-item:hover {
+    background-color: #62a29e;
+    border-bottom: 3px solid #528b86;
+    border-radius: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link,
+.dropdown-item{
+    color: white;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
     text-transform: uppercase;
-    font-weight: bold;
-    background-color: #e5655d;
-    color: white;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-radius: .5rem;
 }
 
-.first-slider-text>p {
+.first-slider .carousel{
+    height: 400px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel, .carousel-inner, .carousel-item {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: unset;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+}
+
+.carousel-caption h5  {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3.6rem;
+    background-color: red;
+    border-radius: .5rem;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption p {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
     background-color: #3f4646;
-    font-size: 1.15rem;
-    color: white;
-    width: 80%;
-    padding: 2rem;
-    margin: auto;
-    margin-top: 4%;
+    padding: 2rem 1rem 2rem 1rem;
     border-radius: .5rem;
     line-height: 2rem;
 }
 
-.carousel {
-    position: relative;
-    max-height: 555px;
-}
 
-.carousel-inner {
-    max-height: 555px;
-    overflow: hidden;
-}
-
-.carousel-indicators {
-    bottom: -7%;
-}
 
 .carousel-indicators li {
     background-color: #b0b8b9;
@@ -158,6 +206,8 @@ header {
     opacity: 1;
     transition: none;
 }
+
+
 
 .carousel-control-next-icon {
     width: 4rem;
@@ -223,7 +273,9 @@ header {
     border-color: #e2534b;
 }
 
-.some-services .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+.some-services .btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
     background-color: #e2534b;
     border-color: #e2534b;
 }
@@ -323,8 +375,19 @@ header {
 .second-box-slider {
     height: 400px;
     background-color: #ececec;
-
+    position: relative;
 }
+
+.second-box-slider::before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    background: url(img/gant.png) center repeat-x;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .7;
+} 
 
 .second-box-slider h2 {
     font-size: 3rem;
@@ -600,6 +663,7 @@ header {
 }
 
 .footer__info {
+    position: relative;
     margin-top: 4rem;
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -717,4 +781,105 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo p {
+    font-size: 1.4em;
+    color: white;
+}
+
+.logo span {
+    font-family: "Open Sans";
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+
+.footer__info::before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    background: url('img/gant.png') center repeat-x;
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: invert(10%);
+    opacity: .3;
+}
+
+
+@media (max-width 992px) {
+    .active-hover {
+        position: static;
+        width: 100%;
+        height: 18.6rem;
+        background-color: #b0b8b9;
+        border-radius: .5rem;
+        box-sizing: border-box;
+        padding: .3rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .some-services p {
+        margin-bottom: 2rem;
+    }
+
+    .advantages .col-lg-3 {
+        margin-top: 4rem;
+    }
+
+    .active-hover {
+        position: static;
+        width: 100%;
+        height: 18.6rem;
+        background-color: #b0b8b9;
+        border-radius: .5rem;
+        box-sizing: border-box;
+        padding: .3rem;
+    }
+
+    .second-box-slider .col-lg-4 {
+        margin-top: 1rem;
+    }
+
+    .description-text-left {
+        margin-top: 470px;
+    }
+
+    .description .col-lg-3:last-child {
+        margin-top: 1rem;
+    }
+
+    .our-clients-wrapper__slider .col-lg-1 {
+        margin-top: 1rem;
+    }
+
+    .out-client-logo .col-lg-2 {
+        display: none;
+    }
+
+    .out-client-logo .col-xs-6 {
+        display: block;
+    }
+
+    .footer__links .col-lg-10,
+    .footer__links .col-lg-2,
+    .footer__info .col-lg-4,
+    .footer__info .col-lg-2 {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .description-text-left {
+        margin-top: 511px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 3rem;
+    }
+
 }
