@@ -32,9 +32,12 @@ header::after {
     opacity: .3;
 }
 
-/* .bd-example {
-    overflow: hidden;
-} */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 
 .nav {
     justify-content: space-between;
@@ -101,8 +104,12 @@ header::after {
     box-sizing: border-box;
     position: relative;
     background-color: #7f8c8c;
-    /* overflow: hidden; */
 }
+
+.first-slider .col-lg-12 {
+    padding: 0;
+}
+
 .nav-item .nav-link {
     font-weight: 600;
     color: #fff;
@@ -521,6 +528,7 @@ header::after {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .progress-bar__custom p {
