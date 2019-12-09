@@ -13,7 +13,7 @@ a, a:hover {
 
 header {
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 80px;
     background-color: #76c7c0;
     display: flex;
@@ -100,12 +100,9 @@ header::after {
     max-height: 555px;
     box-sizing: border-box;
     position: relative;
-}
-
-.first-slider {
     background-color: #7f8c8c;
+    overflow: hidden;
 }
-
 .nav-item .nav-link {
     font-weight: 600;
     color: #fff;
@@ -821,7 +818,7 @@ header::after {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 990px) {
     .some-services p {
         margin-bottom: 2rem;
     }
@@ -838,6 +835,10 @@ header::after {
         border-radius: .5rem;
         box-sizing: border-box;
         padding: .3rem;
+    }
+
+    .second-box-slider {
+        margin-top: 2rem;
     }
 
     .second-box-slider .col-lg-4 {
@@ -872,6 +873,12 @@ header::after {
     }
 
 }
+
+/* @media (max-width: 768px) {
+    .description {
+        margin-top: 45.4em;
+    }
+} */
 
 @media (max-width: 576px) {
     .description-text-left {
