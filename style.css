@@ -32,9 +32,9 @@ header::after {
     opacity: .3;
 }
 
-.bd-example {
+/* .bd-example {
     overflow: hidden;
-}
+} */
 
 .nav {
     justify-content: space-between;
@@ -101,7 +101,7 @@ header::after {
     box-sizing: border-box;
     position: relative;
     background-color: #7f8c8c;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .nav-item .nav-link {
     font-weight: 600;
@@ -873,12 +873,6 @@ header::after {
     }
 
 }
-
-/* @media (max-width: 768px) {
-    .description {
-        margin-top: 45.4em;
-    }
-} */
 
 @media (max-width: 576px) {
     .description-text-left {
